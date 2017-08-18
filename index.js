@@ -7,10 +7,12 @@ function findItemIndex(arr,item) {
     let result = [];
     arr.forEach((elem, index) => {
         if (elem === item) {
-            return index;
+            result.push(index);
         }
     });
     return result;
 }
+
+console.log("findItemIndex([1,3,7,1,4],1):")
 
 console.log(findItemIndex([1,3,7,1,4],1))
